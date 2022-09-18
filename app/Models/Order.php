@@ -50,7 +50,7 @@ class Order extends Model
 	public function getCurrencyQuote($currency, $amount)
 	{
 		$baseTotal = $this->getBaseAmount($currency, $amount);
-		$surchargeAmount = $this->getSurchargeAmount($currency->surcharge_amount, $amount);
+		$surchargeAmount = $this->getSurchargeAmount($currency->surcharge_percentage, $baseTotal);
 		
 		return $baseTotal + $surchargeAmount;
 	}

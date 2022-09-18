@@ -5364,6 +5364,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     getQuoteOption: function getQuoteOption() {
       this.selectedAmount = '';
       this.quote = null;
+      this.serverMsg = null;
       this.showGetQuoteBtn = true;
     },
     getQuote: function getQuote() {
