@@ -19,6 +19,10 @@ After cloning the repository install backend dependencies with Composer:
 
 `$ composer install`
 
+Copy environment example file
+
+`$ mv .env.example .env`
+
 From the project root create database by running:
 
 `$ touch database/database.sqlite`
