@@ -29,6 +29,10 @@ class OrdersController extends ApiController
 		$this->currencyRepository = $currencyRepository;
 	}
 	
+	/**
+	 * @param Request $request
+	 * @return \Illuminate\Http\JsonResponse|mixed
+	 */
 	public function postOrder(Request $request)
 	{
 		$data = [
