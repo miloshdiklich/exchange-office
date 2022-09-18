@@ -59,6 +59,7 @@
 		    getQuoteOption() {
 				this.selectedAmount = '';
 				this.quote = null;
+				this.serverMsg = null;
 			    this.showGetQuoteBtn = true;
 		    },
 		    async getQuote() {
