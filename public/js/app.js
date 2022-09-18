@@ -5330,7 +5330,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       currencies: [],
       quote: null,
       loading: false,
-      serverMsg: ''
+      serverMsg: null
     };
   },
   mounted: function mounted() {
@@ -5530,9 +5530,16 @@ var render = function render() {
     on: {
       click: _vm.placeOrder
     }
-  }, [_vm._v("Order Now")])]) : _vm._e(), _vm._v(" "), _vm.loading ? _c("div", [_vm._v("Working...")]) : _vm._e(), _vm._v(" "), _c("div", {
-    ref: "alert"
-  }, [_vm._v(_vm._s(_vm.serverMsg))])])]);
+  }, [_vm._v("Order Now")])]) : _vm._e(), _vm._v(" "), _vm.loading ? _c("div", [_vm._v("Working...")]) : _vm._e(), _vm._v(" "), _vm.serverMsg ? _c("div", {
+    ref: "alert",
+    staticStyle: {
+      background: "green",
+      color: "white",
+      "max-width": "250px",
+      padding: "11px",
+      "margin-top": "10px"
+    }
+  }, [_vm._v(_vm._s(_vm.serverMsg))]) : _vm._e()])]);
 };
 
 var staticRenderFns = [];

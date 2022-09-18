@@ -24,7 +24,7 @@
 	        </div>
 	        
 	        <div v-if="loading">Working...</div>
-	        <div ref="alert" style="background: green;color: white;max-width: 250px;padding: 11px;margin-top: 10px;">{{ serverMsg }}</div>
+	        <div v-if="serverMsg" ref="alert" style="background: green;color: white;max-width: 250px;padding: 11px;margin-top: 10px;">{{ serverMsg }}</div>
 	        
         </div>
     </div>
@@ -40,7 +40,7 @@
 				currencies: [],
 				quote: null,
 				loading: false,
-				serverMsg: ''
+				serverMsg: null
 			}
         },
         mounted() {

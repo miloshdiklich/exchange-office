@@ -43,7 +43,8 @@ From the project root start server by running:
 
 `php artisan serve`
 
-Application should be running on http://127.0.0.1:8000 if port `8000` is available
+In your browser open up the app by typing in the address: http://localhost:8000.
+Make sure your system has port `8000` available.
 
 
 ## Commands
